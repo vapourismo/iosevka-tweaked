@@ -71,6 +71,12 @@ else
 PARAM = SUFFIX='$(SUFFIX)' VERSION='$(VERSION)'
 endif
 
+# Customization
+STYLE_MODIFIER  = v-g-singlestorey v-at-fourfold
+STYLE_COMMON   += $(STYLE_MODIFIER)
+STYLE_UPRIGHT  += $(STYLE_MODIFIER)
+STYLE_ITALIC   += $(STYLE_MODIFIER)
+
 export VERSION
 export VARNAME
 export STYLE_COMMON
@@ -98,7 +104,7 @@ fonts : $(SCRIPTS) | $(OBJDIR) dist
 # Testdrive
 testdrive : fonts
 	@$(MAKE) -f onegroup.mk test $(PARAM)
-	
+
 # Webfonts
 dist/webfonts : | dist
 	@- mkdir $@
