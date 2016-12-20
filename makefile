@@ -72,7 +72,7 @@ PARAM = SUFFIX='$(SUFFIX)' VERSION='$(VERSION)'
 endif
 
 # Customization
-STYLE_MODIFIER  = v-g-singlestorey v-at-long
+STYLE_MODIFIER  = term v-g-singlestorey v-at-long
 STYLE_COMMON   += $(STYLE_MODIFIER)
 STYLE_UPRIGHT  += $(STYLE_MODIFIER)
 STYLE_ITALIC   += $(STYLE_MODIFIER)
