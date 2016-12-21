@@ -72,10 +72,10 @@ PARAM = SUFFIX='$(SUFFIX)' VERSION='$(VERSION)'
 endif
 
 # Customization
-STYLE_MODIFIER  = v-g-singlestorey v-at-long
-STYLE_COMMON   += $(STYLE_MODIFIER)
-STYLE_UPRIGHT  += $(STYLE_MODIFIER)
-STYLE_ITALIC   += $(STYLE_MODIFIER)
+STYLE_MODIFIER := v-g-singlestorey v-at-long term
+STYLE_COMMON   := $(STYLE_MODIFIER)
+STYLE_UPRIGHT  := $(STYLE_MODIFIER)
+STYLE_ITALIC   := $(STYLE_MODIFIER)
 
 export VERSION
 export VARNAME
@@ -166,7 +166,7 @@ release-all : archives-default archives-term archives-cc \
               pages-default pages-slab x-archives-bundled
 fw : fonts-default fonts-cc fonts-slab fonts-cc-slab fonts-term fonts-term-slab
 
-d-fonts : fonts-d-sans fonts-d-slab
+d-fonts : fonts-d-sans
 test : testdrive-d-sans testdrive-d-slab
 webfonts : d-webfonts
 d-webfonts : webfont-pkg-d-sans webfont-pkg-d-slab

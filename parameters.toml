@@ -109,7 +109,7 @@ spacing = 0
 disableLigation = true
 
 [term.adds]
-family = ' Term'
+family = ''
 
 [cc]
 spacing = 3
